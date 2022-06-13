@@ -1,0 +1,30 @@
+@mixin font($fz, $fw, $lh, $ls) {
+  font-size: $fz;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+@mixin tel {
+  @media screen and (min-width: 448px) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media screen and (min-width: 720px) {
+    @content;
+  }
+}
+
+@mixin desk {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin media($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}

@@ -1,0 +1,32 @@
+.pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.9;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  color: rgba(157, 164, 189, 0.6);
+
+  @media screen and (min-width: 720px) {
+    line-height: 1.36;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1px;
+    margin-right: 20px;
+  }
+}
+
+.pre-title--light::before {
+  background-color: rgba(157, 164, 189, 0.6);
+}
+
+.pre-title--dark::before {
+  background-color: #303030;
+}

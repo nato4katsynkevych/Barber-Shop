@@ -1,0 +1,98 @@
+.online-appointment {
+  flex-basis: calc(100% / 2 + 15px);
+  padding-right: 40px;
+}
+
+.online-appointment__title {
+  color: var(--first-title-color);
+  margin-bottom: 55px;
+}
+
+.online-form__wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 23px;
+}
+
+.online-form__input {
+  width: 260px;
+  height: 24px;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  outline: none;
+  color: var(--first-title-color);
+
+  &:hover,
+  &:focus {
+    border-color: #ffffff;
+  }
+
+  &:hover::placeholder,
+  &:focus::placeholder {
+    color: #ffffff;
+    transition: color 500ms linear;
+  }
+}
+
+.online-form__input--long {
+  width: 270px;
+}
+
+.online-form__text {
+  width: 100%;
+  height: 76px;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--first-title-color);
+  resize: none;
+  outline: none;
+  transition: border-color 500ms linear, color 500ms linear;
+  margin-bottom: 44px;
+
+  &:hover,
+  &:focus {
+    border-color: #ffffff;
+  }
+
+  &:hover::placeholder,
+  &:focus::placeholder {
+    color: #ffffff;
+    transition: color 500ms linear;
+  }
+}
+
+.online-appointment__btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--button-first-color);
+  background-color: transparent;
+
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  min-width: 160px;
+  min-height: 40px;
+
+  &:focus,
+  &:hover {
+    background-color: var(--accent-color);
+    color: var(--button-first-color);
+  }
+}

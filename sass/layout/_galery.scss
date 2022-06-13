@@ -1,0 +1,27 @@
+.galery-list {
+  margin-bottom: -30px;
+
+  @media screen and (min-width: 720px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+  }
+}
+
+.galery-list__item {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 720px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-right: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+}
+
+.galery-pre-title {
+  margin-bottom: 44px;
+  color: var(--second-title-color);
+}

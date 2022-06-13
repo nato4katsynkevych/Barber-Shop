@@ -1,0 +1,81 @@
+.about-list {
+  display: none;
+  @include tab {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @include desk {
+    flex-shrink: 0;
+    flex-wrap: nowrap;
+  }
+}
+
+.about-list__item + .about-list__item {
+  @include desk {
+    margin-left: 30px;
+  }
+}
+
+.about__container {
+  display: flex;
+}
+
+.about__description {
+  /* flex-basis: 480px; Альтернатива flex-shrink:0 для about-list; */
+  @include tab {
+    flex-basis: 90%;
+  }
+  @include desk {
+    margin-left: 64px;
+  }
+}
+
+.about-wrap__pre-title {
+  margin-bottom: var(--hero-margin);
+
+  color: var(--second-title-color);
+}
+
+.about-wrap__title {
+  margin-bottom: var(--hero-margin);
+
+  color: var(--first-text-color);
+}
+
+.about-wrap__after-title {
+  margin-bottom: var(--hero-margin);
+
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+.about-wrap__text {
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+.about__btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--button-second-color);
+
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  min-width: 160px;
+  min-height: 40px;
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--button-first-color);
+  }
+}

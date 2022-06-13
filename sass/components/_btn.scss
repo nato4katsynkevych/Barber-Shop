@@ -1,0 +1,36 @@
+.btn {
+  border-radius: 25px;
+  min-width: 160px;
+  min-height: 40px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  font-family: inherit;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--button-first-color);
+  background-color: transparent;
+  transition: color 300ms linear, background-color 300ms linear;
+}
+
+.btn--modal {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  display: block;
+  margin: 0 auto;
+  width: 16px;
+  transition: color 300ms linear, background-color 300ms linear, border-color 300ms linear;
+  border-color: transparent;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    color: var(--accent-color);
+    border-color: #000000;
+  }
+}
